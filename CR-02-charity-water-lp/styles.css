@@ -1,0 +1,236 @@
+.hero-left {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left !important;
+  padding: 48px 32px;
+}
+
+.hero-left h1, .hero-left p {
+  text-align: left !important;
+  align-self: flex-start;
+}
+
+/*
+  Charity Water Landing Page Styles (Canva-inspired)
+  Beginner-friendly CSS with comments
+*/
+
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #231f20;
+  color: #b97c5a;
+  /* Set the background image, right justified */
+  background-image: url('img/6391_Ethiopia_2019_CG- (1).jpg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px 0 32px;
+  background: #231f20;
+}
+
+.logo {
+  height: 48px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #b97c5a;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section styles */
+
+/* Hero section split left/right */
+
+.hero {
+  display: flex;
+  min-height: 70vh;
+  background: #231f20;
+}
+
+
+.hero-left {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Left justify content */
+  text-align: left; /* Left align text */
+  padding: 48px 32px;
+}
+
+.hero-left h1 {
+  font-size: 3em;
+  color: #b97c5a;
+  margin-bottom: 24px;
+}
+
+.hero-left p {
+  font-size: 1.3em;
+  color: #b97c5a;
+  margin-bottom: 32px;
+}
+
+.hero-right {
+  flex: 1 1 50%;
+  position: relative;
+  background: url('img/6391_Ethiopia_2019_CG- (1).jpg') center center/cover no-repeat;
+  min-height: 70vh;
+  border-radius: 0 0 0 0;
+}
+
+/* Donate button in upper right of image */
+.donate-corner {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  z-index: 2;
+  background: #b97c5a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.donate-corner:hover {
+  background: #a86c4c;
+}
+
+.cta-btn {
+  background: #b97c5a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 18px 36px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.cta-btn:hover {
+  background: #a86c4c;
+}
+
+/* Mission, Impact, Donate sections */
+.mission, .impact, .donate {
+  max-width: 700px;
+  margin: 48px auto;
+  padding: 32px;
+  background: #231f20;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.mission h2, .impact h2, .donate h2 {
+  color: #b97c5a;
+  font-size: 2em;
+  margin-bottom: 16px;
+}
+
+.mission p, .impact p, .donate p {
+  color: #b97c5a;
+  font-size: 1.1em;
+}
+
+.impact img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+footer {
+  text-align: center;
+  padding: 32px 0;
+  background: #231f20;
+  color: #b97c5a;
+  font-size: 1em;
+}
+
+/* Responsive styles for mobile and tablets */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    min-height: 50vh;
+  }
+  .hero-left {
+    padding: 24px 12px;
+    text-align: center;
+  }
+  .hero-left h1 {
+    font-size: 2em;
+  }
+  .hero-left p {
+    font-size: 1em;
+  }
+  .hero-right {
+    min-height: 220px;
+    height: 220px;
+    background-position: center center;
+    border-radius: 0;
+  }
+  .donate-corner {
+    top: 16px;
+    right: 16px;
+    padding: 10px 18px;
+    font-size: 1em;
+  }
+  .mission, .impact, .donate {
+    padding: 16px;
+    margin: 24px 8px;
+  }
+  .impact img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-left h1 {
+    font-size: 1.3em;
+  }
+  .hero-left p {
+    font-size: 0.95em;
+  }
+  .donate-corner {
+    font-size: 0.95em;
+    padding: 8px 12px;
+  }
+  .mission, .impact, .donate {
+    padding: 10px;
+    margin: 12px 4px;
+  }
+}
